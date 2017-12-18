@@ -134,5 +134,58 @@
     }
 }
 
+/*estilos para la section rates*/
+#rates{
+    background: #F3AB24;
+}
 
+#rates .row{
+    display:flex;
+    justify-content: space-between;
+    margin: 3vw;
+}
 
+[alt="sudamerica"]{
+    width: 25vw;
+    height: 30vw;    
+    padding: 1vw;
+    border: 2px solid #fff;
+}
+
+@media(max-width:767px){
+    #rates .row{
+        display:flex;
+        flex-direction: column;
+    }
+    #rates .row .col-md-offset-3 img{
+        content: url('../assets/images/mapa-mobile.png');
+        width: 70vw;
+        height: 60vw;
+        margin: 4vw;
+    }
+}
+/*estilos para el footer*/
+footer{
+    background: #2C3E50;
+    padding: 6vw 0;
+}
+
+footer ul  li{
+     line-height: 2.5;
+}
+
+footer [alt="appstore"], [alt="playstore"]{
+    width: 13vw;
+    padding: 1vw 0;
+    position: relative;
+    top: 10vw;
+}
+
+@media(max-width:767px){
+    footer{
+        padding: 10vw 5vw;
+    }
+    footer [alt="appstore"], [alt="playstore"]{
+        width: 40vw;
+    }
+}
