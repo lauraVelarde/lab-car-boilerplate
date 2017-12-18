@@ -1,9 +1,138 @@
 /* Los estilos de tu proyecto */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color:#fff;
+}
+
+/*estilos para la section registrarse */
 .hero-image{
     background-image: url('../assets/images/taxi.jpg');
-    height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
     position: relative;
 }
+
+#section-checkin .orange{
+    background: #F3AB24;
+    border-radius: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0;
+    width:35%;
+    height: auto;
+    margin-left: 65%;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #fff; 
+    padding: 3vw;
+}
+
+#section-checkin .visible-xs-block{
+    width: 65%;
+    margin-left:35%;
+}
+
+#section-checkin a{
+    background: #fff;
+    color: #000;
+}
+
+#section-checkin .row{
+    margin-right: 0;
+}
+
+#section-checkin h2{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+#section-checkin [alt="logoBlanco"]{
+    width: 15vh;
+}
+
+/*estilos para la section phone*/
+#img-phone{
+    background: #F3AB24;
+}
+
+#img-phone .hidden-xs{
+    width: 70%;
+    padding: 5vh;
+    margin: 5vh 0;
+    border: 1px solid #fff;
+    border-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#img-phone #text-phone{
+    font-size: 1.30vw;
+    text-align: justify;
+}
+
+#img-phone [alt="phone"]{
+    width: 25vw;
+}
+
+#img-phone .visible-xs-block .col-xs-12{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    padding: 5vw;
+    margin: 8vw 3vw;
+}
+
+
+#img-phone [alt="phone-mobile"]{
+    width: 75vw;
+}
+
+/*estilos para la section be driver*/
+
+#be-driver{
+    background-image: url('../assets/images/conduce.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    background-position-x: center;
+    background-position-y: bottom;
+    position: relative;
+    height: 55vh;
+    
+}
+
+#be-driver .opacity{
+    padding: 6vw 3vw 2vw 3vw;
+    background: rgba(0, 0, 0, 0.6);
+    height: 40vh;
+    width: 30vw;
+    float: right;
+}
+
+@media(max-width:767px){
+
+    #be-driver .opacity{
+        width: 100vw;
+        height: 100vw;
+        padding: 10vw 3vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #be-driver .opacity .btn{
+        width:50vw;
+    }
+}
+
+
+
