@@ -6,7 +6,37 @@
     font-family: 'Raleway', sans-serif;
     color:#fff;
 }
+/*estilos para el navbar phone*/
+.izquierda{
+    float: left;
+}
 
+/*estilos para el modal login*/
+#login .modal-content{
+    background: #2FBD9A;
+}
+[alt="user"]{
+    width: 12vw;
+}
+
+.gray{
+    color: #737D7B;
+}
+
+#login .modal-body .jumbotron{
+    width: 20vw;
+    padding: 1.5vw;
+}
+
+#login .modal-body .jumbotron h5{
+    display: inline-block;
+    margin: 2vw 0.50vw 1.5vw auto;
+}
+
+#login .modal-body .jumbotron a{
+    text-decoration: none;
+    color: #C3604A;
+}
 /*estilos para la section registrarse */
 .hero-image{
     background-image: url('../assets/images/taxi.jpg');
@@ -55,6 +85,36 @@
 
 #section-checkin [alt="logoBlanco"]{
     width: 15vh;
+}
+
+/*estilos para el modal signup*/
+#signup .black{
+   color: #fff;
+   background-color: #000;
+}
+
+#signup .modal-content, #become-driver .modal-content{
+    background: #a9a9a9;
+}
+
+#signup .modal-content .modal-body h5{
+    text-align: center;
+    color: #000;
+    padding: 1.5vw 0 0.50vw 0 ;
+}
+
+#signup .modal-content .modal-body .padding-left{
+    padding: 0 7vw 0 1vw;
+}
+
+#signup .margin-top{
+    margin-top: 1.5vw;
+}
+
+#signup .modal-content .modal-body .bolder,span{
+    background: #D7DBDD;
+    color: #000;
+    font-weight: bolder;
 }
 
 /*estilos para la section phone*/
@@ -134,6 +194,11 @@
     }
 }
 
+/*estilos para el modal become-driver*/
+
+#become-driver label{
+    color: #000;
+}
 /*estilos para la section rates*/
 #rates{
     background: #F3AB24;

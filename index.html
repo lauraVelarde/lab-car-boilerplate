@@ -16,7 +16,7 @@
     <nav class="navbar-default">
         <div class="container">
             <div class="navbar-header col-md-4 col-md-offset-4">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <button type="button" class="navbar-toggle collapsed izquierda" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -29,8 +29,45 @@
             <ul id="navbar" class="navbar-text navbar-collapse collapse nav navbar-nav navbar-right col-md-4 col-md-offset-4">
                 <li><a href="#">Viaja</a></li>
                 <li><a href="#">Conduce</a></li>
-                <li><a href="#">Inicia sesión</a></li>
+                <li><a href="#login" data-toggle="modal">Inicia sesión</a></li>
             </ul>
+            </div>
+        </div>
+        <!--modal login-->
+        <div class="modal fade" id="login">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!--Header del modal login-->
+                    <div class="modal-header">
+                        <button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <img src="assets/icons/user.png" alt="user" class="center-block">
+                    </div>
+                    <!--Contenido del modal login-->
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="jumbotron center-block">
+                                <form action="" class="">
+                            
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><span class="glyphicon glyphicon-user gray" aria-hidden="true"></span></div>
+                                            <input type="text" class="form-control" placeholder="Username">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">   
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><span class="glyphicon glyphicon-lock gray" aria-hidden="true"></span></div>
+                                            <input type="text" class="form-control" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-warning center-block">LOGING</button>
+                                </form>
+                                <h5 class="gray">Forgot password?</h5><a href="#">Click Here</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -43,14 +80,60 @@
                     <h3>Disfruta del viaje</h3>
                     <h3>Eres dueño de tu tiempo</h3>
                     <h4>Viaja con <img src="assets/images/logoBlanco.png" class="img-responsive" alt="logoBlanco"></h4>
-                    <p><a class="btn btn-lg btn-default" href="#" role="button">REGÍSTRATE</a></p>
+                    <p><a class="btn btn-lg btn-default" href="#signup" data-toggle="modal" role="button">REGÍSTRATE</a></p>
                     <p class="text-center">O bien</p>
-                    <p><a class="btn btn-lg btn-default" href="#" role="button">Conviértete en un conductor</a></p>
+                    <p><a class="btn btn-lg btn-default" href="#become-driver" data-toggle="modal" role="button">Conviértete en un conductor</a></p>
                 </div>
                 <!--version mobile-->
                 <div class="col-xs-12 visible-xs-block orange">
                     <h2>Comienza a viajar con <img src="assets/images/logoBlanco.png" class="img-responsive" alt="logoBlanco"></h2>
                     <p><a class="btn btn-lg btn-default" href="#" role="button">Descarga el app</a></p>
+                </div>
+            </div>
+        </div>
+        <!--modal signup-->
+        <div class="modal fade" id="signup">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <br>
+                            <a href="#login" data-toggle="modal" type="button" class="btn black col-md-12">Ya tienes una cuenta?</a>
+                            <br>
+                            <h5>O  CREA UNA CUENTA NUEVA </h5>
+                            <form action="" class="form-inline">
+                                <div class="form-group">
+                                    <input type="text" class="form-control padding-left" placeholder="Nombre">                                 
+                                    <input type="text" class="form-control padding-left" placeholder="Apellido">                              
+                                </div>
+                            </form>
+                            <form class="margin-top">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Correo Electrónico:ejemplo@correo.mx">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Telefóno">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Contraseña">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Ciudad">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="(Opcional) Código de invitación">
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-default btn-lg btn-block bolder">Como te enteraste de nosotros?<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-info btn-lg btn-block">ENVIAR</button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -88,7 +171,68 @@
                 <div class="col-md-4 col-xs-12 opacity">
                     <h3>Conduce cuando quieras</h3>
                     <p>LabCar es una opción flexible para alcanzar tus metas financieras</p>
-                    <button type="button" class="btn btn-warning">Conviértete en conductor</button>
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#become-driver">Conviértete en conductor</button>
+                </div>
+            </div>
+        </div>
+        <!--modal conviértete en conductor-->
+        <div class="modal fade" id="become-driver">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="vehiculo">¿Tienes vehículo de 4 puertas?</label>
+                                    <select name="" id="vehiculo" class="form-control">
+                                        <option value="">Si</option>
+                                        <option value="">No</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="marca">Marca</label>
+                                    <select name="" id="marca" class="form-control">
+                                        <option value="">Elige la marca del vehículo</option>
+                                        <option value="">Toyota</option>
+                                        <option value="">Audi</option>
+                                        <option value="">Alfa romeo</option>
+                                        <option value="">Chevrolet</option>
+                                        <option value="">Ferrari</option>
+                                    </select>
+                                    <p class="help-block">¿No ves tu vehículo en la lista? Envía un correo electrónico a <br/><a href="#">sociosmdv@uber.com</a></p>            
+                                </div>
+                                <div class="form-group">
+                                    <label for="modelo">Modelo</label>
+                                    <select name="" id="modelo" class="form-control">
+                                        <option value="">modelo1</option>
+                                        <option value="">modelo2</option>
+                                        <option value="">modelo3</option>
+                                        <option value="">modelo4</option>
+                                        <option value="">modelo5</option>                                 
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="año">Año</label>
+                                    <select name="" id="año" class="form-control">
+                                        <option value="">2017</option>
+                                        <option value="">2016</option>
+                                        <option value="">2015</option>
+                                        <option value="">2014</option>
+                                        <option value="">2013</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="matricula">Número de la matrícula</label>
+                                    <input type="text" name="" id="matricula" placeholder="Número de la matrícula" class="form-control">
+                                    <p class="help-block">La información de la matrícula ayuda a los clientes a identificar tu vehiculo</p>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-info btn-lg btn-block">ENVIAR</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
